@@ -16,6 +16,5 @@ class Solution {
             return 0;
         }
         return Math.toIntExact(num);
-
     }
 }
