@@ -1,6 +1,6 @@
 class Solution {
  public int reverse(int x) {
-         StringBuilder result = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         if (x < 0) {
             result.append("-");
         }
@@ -11,11 +11,11 @@ class Solution {
             }
         }
 
-        long num = Long.valueOf(String.valueOf(result));
+        Long num = Long.valueOf(String.valueOf(result));
         if (num > Integer.MAX_VALUE || num < Integer.MIN_VALUE) {
             return 0;
         }
-        return (int) num;
+        return Math.toIntExact(num);
 
     }
 }
